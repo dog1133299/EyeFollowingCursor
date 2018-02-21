@@ -13,9 +13,6 @@ document.addEventListener("mousemove",mouseMoveHandler,false);
 function mouseMoveHandler(e){
 	cursorX= e.clientX- canvas.offsetLeft;
 	 cursorY=e.clientY- canvas.offsetTop;
-	//var relativeX = e.clientX - canvas.offsetLeft;
-	//console.log(e.clientY);
-
 };
 
 function DrawEyes(x,y,eyeSize,lineSize,eyeBallSize,pupilSize,eyeBallColor,pupilColor){
@@ -57,8 +54,7 @@ ctx.restore();
 }
  function draw() {
  	// body...
- 	ctx.clearRect(0,0,canvas.width,canvas.height);
-
+ 	ctx.clearRect(0,0,canvas.width,canvas.height); 
  	 
  	DrawEyes(180,200,8,3,10,2,"black","white");
  	DrawEyes(295,200,8,3,10,2,"black","white");
